@@ -31,62 +31,64 @@
 	</head>
 
 	<body>
-		<!-- Navigation bar -->
-		<nav class="navbar navbar-expand-md sticky-top navbar-light bg-info">
-			<a class="navbar-brand" href="mc_portal.html">
-				<img src="images/logo.png" width="60" height="60" class="d-inline-block align-middle" alt="aCATdemy" loading="lazy">
-				aCATServer Portal
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div class="navbar-nav mr-auto">
-					<a class="nav-link" href="mc_portal.html">Home</a>
-					<a class="nav-link active" href="mc_server-kb.html"><span class="badge badge-primary badge-pill">0</span> Knowledge Base</a>
-					<a class="nav-link disabled" href="mc_support.html">Support</a>
-				</div>
-				<form action="index.html" method="get">
-					<button class="btn btn-outline-light bg-primary my-2 my-sm-0" type="submit">Back to Main Site</button>
-				</form>
-			</div>
-		</nav>
-		
-		<!-- Important notification(s) -->
-		
-		
-		<!-- Page contents -->
-		<div class="container w-75 p-5 bg-dark">
-			<h1 class="text-white font-weight-bold text-center">KNOWLEDGE BASE</h1>
-		</div>
-		<div class="container w-75 p-5 bg-light">
-			<p class="text-black text-left">aCATServer Knowledge Base is a repository of logs made available for our server members. It contains information on problems encountered by members of aCATServer. Each log bears a unique ID number, description of the problems, and the status of whether it has been solved.</p>
-			<p class="text-black text-left font-weight-bold font-italic">This page refreshes every 60 seconds.</p>
-			<small class="text-muted text-left font-italic">Last updated: 16 November 2020</small>
-			<hr class="bg-dark">
-			<p class="text-black text-left font-italic">Legends:</p>
-			<ul style="list-style-type: none">
-				<li><small><span class="badge badge-secondary badge-pill">Grey</span> Issue resolved</small></li>
-				<li><small><span class="badge badge-primary badge-pill">Blue</span> Issue discovered</small></li>
-				<li><small><span class="badge badge-success badge-pill">Green</span> Issue has low impact on server performance/files</small></li>
-				<li><small><span class="badge badge-warning badge-pill">Yellow</span> Issue has impacted server performance/files</small></li>
-				<li><small><span class="badge badge-danger badge-pill">Red</span> Issue has severely affected server performance/files</small></li>
-			</ul>
-			<hr>
-			<p class="text-black text-left"><span class="font-weight-bold">Hooray!</span> There are currently no issues detected!</p>
-			<p class="text-black text-left font-italic">Still suspect something is abnormal? <span class="font-weight-bold font"><a href="https://forms.gle/WYqqRxpFzM8Bt18dA"><u>Click here</u></a></span> to report the issues that you are facing.</p>
-		</div>
-		
-		<!-- Page footer -->
-		<div class="container-fluid bg-dark">
-			<nav class="navbar navbar-expand-sm">
-				<div class="navbar-nav mx-auto">
-					<a class="nav-link active" href="terms.html"><b>Terms of Use</b></a>
-					<a class="nav-link" href="#"><b>Privacy Policy</b></a>
-					<a class="nav-link" href="#"><b>Sitemap</b></a>
+		<div class="kb-bg">
+			<!-- Navigation bar -->
+			<nav class="navbar navbar-expand-md sticky-top navbar-light bg-info">
+				<a class="navbar-brand" href="mc_portal.html">
+					<img src="images/logo.png" width="60" height="60" class="d-inline-block align-middle" alt="aCATdemy" loading="lazy">
+					aCATServer Portal
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav mr-auto">
+						<a class="nav-link" href="mc_portal.html">Home</a>
+						<a class="nav-link active" href="mc_server-kb.html"><span class="badge badge-primary badge-pill">0</span> Knowledge Base</a>
+						<a class="nav-link disabled" href="mc_support.html">Support</a>
+					</div>
+					<form action="index.html" method="get">
+						<button class="btn btn-outline-light bg-primary my-2 my-sm-0" type="submit">Back to Main Site</button>
+					</form>
 				</div>
 			</nav>
-			<div class="text-center text-white">&copy; 2020, aCATdemy</div>
+
+			<!-- Important notification(s) -->
+
+
+			<!-- Page contents -->
+			<div class="container w-75 p-5 bg-dark">
+				<h1 class="text-white font-weight-bold text-center">KNOWLEDGE BASE</h1>
+			</div>
+			<div class="container w-75 p-5 bg-light">
+				<p class="text-black text-left">aCATServer Knowledge Base is a repository of logs made available for our server members. It contains information on problems encountered by members of aCATServer. Each log bears a unique ID number, description of the problems, and the status of whether it has been solved.</p>
+				<p class="text-black text-left font-weight-bold font-italic">This page refreshes every 60 seconds.</p>
+				<small class="text-muted text-left font-italic">Last updated: 16 November 2020</small>
+				<hr class="bg-dark">
+				<p class="text-black text-left font-italic">Legends:</p>
+				<ul style="list-style-type: none">
+					<li><small><span class="badge badge-secondary badge-pill">Grey</span> Issue resolved</small></li>
+					<li><small><span class="badge badge-primary badge-pill">Blue</span> Issue discovered</small></li>
+					<li><small><span class="badge badge-success badge-pill">Green</span> Issue has low impact on server performance/files</small></li>
+					<li><small><span class="badge badge-warning badge-pill">Yellow</span> Issue has impacted server performance/files</small></li>
+					<li><small><span class="badge badge-danger badge-pill">Red</span> Issue has severely affected server performance/files</small></li>
+				</ul>
+				<hr>
+				<p class="text-black text-left"><span class="font-weight-bold">Hooray!</span> There are currently no issues detected!</p>
+				<p class="text-black text-left font-italic">Still suspect something is abnormal? <span class="font-weight-bold font"><a href="https://forms.gle/WYqqRxpFzM8Bt18dA"><u>Click here</u></a></span> to report the issues that you are facing.</p>
+			</div>
+
+			<!-- Page footer -->
+			<div class="container-fluid bg-dark">
+				<nav class="navbar navbar-expand-sm">
+					<div class="navbar-nav mx-auto">
+						<a class="nav-link active" href="terms.html"><b>Terms of Use</b></a>
+						<a class="nav-link" href="#"><b>Privacy Policy</b></a>
+						<a class="nav-link" href="#"><b>Sitemap</b></a>
+					</div>
+				</nav>
+				<div class="text-center text-white">&copy; 2020, aCATdemy</div>
+			</div>
 		</div>
 		
 	</body>
