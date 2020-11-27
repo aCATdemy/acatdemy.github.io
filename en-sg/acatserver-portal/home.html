@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- Page v2.0, Bootstrap v4.5.3 -->
+<!-- Page v2.1, Bootstrap v4.5.3 -->
 
 <html lang="en-SG">
 	<head>
@@ -7,10 +7,11 @@
 		<title>Home | aCATServer Portal</title>
 		<link rel="icon" href="../images/favicon.ico">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-		
 		<meta name="author" content="aCATdemy">
-		<meta name="description" content="aCATServer Portal main page. IMPORTANT NOTICE FOR VISITORS OF THIS PORTAL: aCATServer Portal is created for members invited to join aCATdemy's private Minecraft server. Please kindly note that every information on this portal is neither related nor linked in any form to the main site.">
-		<meta name="keywords" content="aCATdemy">
+		
+		<!-- Meta tag for search engine indexing -->
+		<meta name="description" content="Official website of the aCATServer Network.">
+		<meta name="keywords" content="aCATdemy, aCATServer, aCATServer Portal, aCATServer Network">
 		
 		<!-- CSS files -->
 		<link rel="stylesheet" href="../functions/css/acatserver-portal.css">
@@ -24,39 +25,42 @@
 	<body>
 		<div class="home-bg">
 			
-			<!-- Navigation bar -->
-			<nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #18AB12;">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavigationBar" aria-controls="NavigationBar" aria-expanded="false" aria-label="Toggle Navigation Bar">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<a class="navbar-brand" href="home.html">
-					<img src="../images/logo.png" width="45" height="45" class="d-inline-block align-middle" alt="logo.png"> aCATServer Portal
-				</a>
-				<div class="collapse navbar-collapse" id="NavigationBar">
-					<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-						<li class="nav-item active">
-							<a class="nav-link" href="home.html"><strong>Home</strong> <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="server-rules.html">Server Rules</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="knowledge-base.html"><span class="badge badge-primary">0</span> Knowledge Base</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="support.html">Support</a>
-						</li>
-					</ul>
-					<form class="form-inline my-2 my-lg-0" action="../index.html">
-						<button class="btn btn-info my-2 my-sm-0" type="submit">Back to Main Site</button>
-					</form>
-				</div>
-			</nav>
+			<!-- Page header -->
+			<header>
+				<nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #18AB12;">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavigationBar" aria-controls="NavigationBar" aria-expanded="false" aria-label="Toggle Navigation Bar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<a class="navbar-brand" href="home.html">
+						<img src="../images/logo.png" width="45" height="45" class="d-inline-block align-middle" alt="logo.png"> aCATServer Portal
+					</a>
+					<div class="collapse navbar-collapse" id="NavigationBar">
+						<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+							<li class="nav-item active">
+								<a class="nav-link" href="home.html"><strong>Home</strong> <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="server-rules.html">Server Rules</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="knowledge-base.html"><span class="badge badge-primary">0</span> Knowledge Base</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="support.html">Support</a>
+							</li>
+						</ul>
+						<form class="form-inline my-2 my-lg-0" action="../index.html">
+							<button class="btn btn-info my-2 my-sm-0" type="submit">Back to Main Site</button>
+						</form>
+					</div>
+				</nav>
+			</header>
 			
 			<!-- Important notification(s) -->
 			<div class="alert alert-warning alert-dismissible fade show" role="alert">
 				<p class="text-danger font-weight-bold">Notice to Visitors of aCATServer Portal:</p>
-				<span class="text-dark">This portal is specially created for members of the aCATServer network. Although you may still visit this site at your own discretion, you have acknowledged that contents on this portal are not linked, whether directly or indirectly, to the main site.</span>
+				<p class="text-dark">This portal is specially created for members of the aCATServer network. Although you may still visit this site at your own discretion, you have acknowledged that contents on this portal are not linked, whether directly or indirectly, to the main site.</p>
+				<p class="text-dark">In addition, the main site continue to route to this portal until the end of the year. We apologise for the delay.</p>
 				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -71,7 +75,8 @@
 					
 					<h3 class="text-dark font-weight-bold">aCATServer 1.17 Features Suggestion</h3>
 					<small class="text-muted font-italic">Author: aCATdemy</small>
-					<small class="text-muted font-italic">26 November 2020, </small>
+					<br>
+					<small class="text-muted font-italic">26 November 2020, 08:13</small>
 					<hr>
 					<p class="text-dark">Dear aCATServer members,</p>
 					<p class="text-dark">I require your help in suggesting the features that will be integrated into aCATServer 1.17. I assure everyone that your suggestions will be read through and not be thrown into the bin, so long as it is something sensible.</p>
@@ -128,17 +133,19 @@
 			</div>
 			
 			<!-- Page footer -->
-			<div class="container-fluid bg-dark p-2">
-				<ul class="nav justify-content-center">
-					<li class="nav-item">
-						<a class="nav-link" href="#"><strong>Terms of Use</strong></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#"><strong>Privacy Policy</strong></a>
-					</li>
-				</ul>
-				<p class="text-white text-center">&copy; 2020 aCATdemy</p>
-			</div>
+			<footer>
+				<div class="container-fluid bg-dark p-2">
+					<ul class="nav justify-content-center">
+						<li class="nav-item">
+							<a class="nav-link" href="#"><strong>Terms of Use</strong></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><strong>Privacy Policy</strong></a>
+						</li>
+					</ul>
+					<p class="text-white text-center">&copy; 2020 aCATdemy</p>
+				</div>
+			</footer>
 			
 		</div>
 	</body>
