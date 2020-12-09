@@ -221,7 +221,6 @@ th, td {
 
 /* Server Guidelines Table START */
 .sgTable {
-	overflow-x: auto;
 	width: 100%;
 }
 
