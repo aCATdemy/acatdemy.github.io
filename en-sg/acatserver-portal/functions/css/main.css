@@ -3,15 +3,25 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* Body START */
-body {
+/* Page Background START */
+.homeBackground {
 	font-family: 'Roboto', sans-serif;
 	margin: 0;
 	padding: 0;
 	background: url("../../images/home-bg.png");
 	background-attachment: fixed;
+	background-repeat: no-repeat;
 }
-/* Body END */
+
+.sgBackground {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	background: url("../../images/server-guidelines-bg.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+/* Page Background END */
 
 
 /* Navigation Bar START*/
@@ -149,15 +159,23 @@ nav ul li a:hover {
 }
 
 .textCenter {
-	align-content: center;
+	text-align: center;
+}
+
+.textRight {
+	align-content: right;
 }
 
 .textBlack {
-	color: black;
+	color: #000000;
 }
 
 .textGrey {
 	color: grey;
+}
+
+.textWhite {
+	color: #FFFFFF;
 }
 /* Font Formatting END*/
 
@@ -185,7 +203,81 @@ nav ul li a:hover {
 	border-radius: 4px;
 	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
-/* Content Container START */
+/* Content Container END */
+
+
+/* Global Table Attribute START */
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 10px;
+	text-align: left;
+}
+/* Global Table Attribute END */
+
+
+/* Server Guidelines Table START */
+.sgTable {
+	overflow-x: auto;
+	width: 100%;
+}
+
+.sgTHFill {
+	background-color: #232323;
+}
+
+.sgTRFill {
+	background-color: rgba(192,192,192,0.75);
+}
+/* Server Guidelines Table END */
+
+
+/* Badge START */
+.badgeGreen {
+	display: inline-block;
+	padding: 3px;
+	font-size: 75%;
+	font-weight: bold;
+	line-height: 1;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: 5px;
+	color: #FFFFFF;
+	background-color: #00BB0F;
+}
+
+.badgeAmber {
+	display: inline-block;
+	padding: 3px;
+	font-size: 75%;
+	font-weight: bold;
+	line-height: 1;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: 5px;
+	color: #FFFFFF;
+	background-color: #FFBF00;
+}
+
+.badgeRed {
+	display: inline-block;
+	padding: 3px;
+	font-size: 75%;
+	font-weight: bold;
+	line-height: 1;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: 5px;
+	color: #FFFFFF;
+	background-color: #DC0000;
+}
+/* Badge END */
 
 
 /* Back to Main Site Button START*/
