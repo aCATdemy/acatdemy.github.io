@@ -1,14 +1,75 @@
 <!doctype html>
 <!-- Version 1.0 -->
 
-<html>
+<html lang="en-SG">
 	<head>
 		<meta charset="utf-8">
-		<title>Under Maintenance</title>
+		<title>Support | aCATServer Portal</title>
+		<link rel="icon" type="image/png" href="images/logo.png">
+		<meta name="author" content="aCATdemy">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" href="functions/css/main.css">
+		<script src="https://kit.fontawesome.com/d8e62e723a.js" crossorigin="anonymous"></script>
 	</head>
-	
-	<body>
-		<h1>Maintenance Notification</h1>
-		<p>This page is down for maintenance. Check back later!</p>
+
+	<body class="supportBackground">
+		<header>
+			<a href="home.html" class="logo">
+				<img class="navLogo" src="images/logo.png" alt="logo.png" width="50px" height="50px"> aCATServer Portal
+			</a>
+			<div class="menu-toggler"></div>
+			<nav>
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="server-guidelines.html">Server Guidelines</a></li>
+					<li><a href="knowledge-base.html">Knowledge Base</a></li>
+					<li><a href="support.html" class="navActive" target="_blank">Support</a></li>
+				</ul>
+			</nav>
+			<div class="clearfix"></div>
+		</header>
+		
+		<a href="https://docs.google.com/forms/d/e/1FAIpQLSe7IX87yDpltlkERkcQiS0MbMDd1Ffuqr0qA91CU_4xCrDYFg/viewform?usp=sf_link" target="_blank">
+			<div class="split left">
+				<div class="centered">
+					<img src="images/logo.png" alt="logo.png">
+					<h2 class="textWhite">aCATServer Network Support</h2>
+					<p class="textWhite">At aCATServer Network, one of my goal is to ensure everyone is completely satisfied with the server experience. I take pride in hosting the server and want all members to enjoy them just as much as I do. If you are experiencing an issue, please click here to create a ticket.</p>
+				</div>
+			</div>
+		</a>
+		
+		<a href="https://help.minecraft.net/hc/en-us" target="_blank">
+			<div class="split right">
+				<div class="centered">
+					<img src="images/minecraft_logo.png" alt="minecraft_logo.png">
+					<h2 class="textWhite">Official Minecraft Support</h2>
+					<p class="textWhite">Looking for the official Minecraft support instead? Click here to be redirected to the official Minecraft support page.</p>
+				</div>
+			</div>
+		</a>
+		
+		<!--
+		<footer class="footerRelative">
+			<ul>
+				<li><a href="">Terms &amp; Conditions</a></li>
+				<li><a href="">Privacy Policy</a></li>
+			</ul>
+			<p class="footerText fontBold">&copy;2020 aCATdemy</p>
+		</footer>
+		-->
+		
+		<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.menu-toggler').click(function(){
+					$('.menu-toggler').toggleClass('active')
+					$('nav').toggleClass('active')
+				})
+			})
+		</script>
 	</body>
 </html>

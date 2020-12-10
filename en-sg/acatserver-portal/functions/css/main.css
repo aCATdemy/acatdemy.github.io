@@ -21,6 +21,24 @@
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 }
+
+.kbBackground {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	background: url("../../images/knowledge-base-bg.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.supportBackground {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	background: url("../../images/support-bg.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
 /* Page Background END */
 
 
@@ -177,18 +195,11 @@ nav ul li a:hover {
 .textWhite {
 	color: #FFFFFF;
 }
+
+.textRed {
+	color: #FF0000;
+}
 /* Font Formatting END*/
-
-
-/* Horizontal Rule Formatting START */
-.hrBlack {
-	background-color: black;
-}
-
-.hrGrey {
-	background-color: grey;
-}
-/* Horizontal Rule Formatting END */
 
 
 /* Content Container START */
@@ -275,6 +286,70 @@ th, td {
 /* Badge END */
 
 
+/* Live Blinking Button START */
+.blinkingCircle {
+	animation: blinker 1.25s linear infinite;
+}
+
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
+}
+/* Live Blinking Button END */
+
+
+/* Split Screen START */
+.splitContainer {
+	position: relative;
+	padding: 10px;
+}
+
+.split {
+	height: 100%;
+	width: 50%;
+	position: fixed;
+	z-index: 1;
+	top: 10;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+.left {
+	left: 0;
+	background-color: rgba(255,170,34,0.50);
+}
+
+.left:hover {
+	background-color: rgba(179,118,0,0.50);
+	transition: 0.25s;
+}
+
+.right {
+	right: 0;
+	background-color: rgba(128,199,31,0.50);
+}
+
+.right:hover {
+	background-color: rgba(52,147,0,0.50);
+	transition: 0.25s;
+}
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.centered img {
+	width: 150px;
+	border-radius: 50%;
+}
+/* Split Screen END */
+
+
 /* Back to Main Site Button START*/
 .MSbutton {
 	position: fixed;
@@ -301,11 +376,20 @@ th, td {
 
 
 /* Footer START*/
-footer {
+.footerRelative {
 	position: relative;
 	max-width: 100%;
 	padding: 10px;
 	background: #2F2F2F;
+}
+
+.footerFixed {
+	position: fixed;
+	width: 100%;
+	padding: 10px;
+	background: #2F2F2F;
+	left: 0;
+	bottom: 0;
 }
 
 footer ul {

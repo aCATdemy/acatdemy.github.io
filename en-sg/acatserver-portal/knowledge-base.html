@@ -1,14 +1,65 @@
 <!doctype html>
 <!-- Version 1.0 -->
 
-<html>
+<html lang="en-SG">
 	<head>
 		<meta charset="utf-8">
-		<title>Under Maintenance</title>
+		<title>Knowledge Base | aCATServer Portal</title>
+		<link rel="icon" type="image/png" href="images/logo.png">
+		<meta name="author" content="aCATdemy">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="Refresh" content="60">
+		
+		<link rel="stylesheet" href="functions/css/main.css">
+		<script src="https://kit.fontawesome.com/d8e62e723a.js" crossorigin="anonymous"></script>
 	</head>
-	
-	<body>
-		<h1>Maintenance Notification</h1>
-		<p>This page is down for maintenance. Check back later!</p>
+
+	<body class="kbBackground">
+		<header>
+			<a href="home.html" class="logo">
+				<img class="navLogo" src="images/logo.png" alt="logo.png" width="50px" height="50px"> aCATServer Portal
+			</a>
+			<div class="menu-toggler"></div>
+			<nav>
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="server-guidelines.html">Server Guidelines</a></li>
+					<li><a href="knowledge-base.html" class="navActive">Knowledge Base</a></li>
+					<li><a href="support.html">Support</a></li>
+				</ul>
+			</nav>
+			<div class="clearfix"></div>
+		</header>
+		
+		<div class="contentContainer">
+			<p>aCATServer Network Knowledge Base (KB) is a repository of logs made available for members of the aCATServer Network. It keeps a log of every issues or problem reported as the server runs. Each log bears a unique ID and description of the issue or problem. When a workaround or patch is available, the respecting log will be updated to reflect it.</p>
+			<p class="fontBold textRed"><span class="blinkingCircle">&#9673;</span> LIVE: aCATServer Network Knowledge Base updates and refreshes every 60 seconds.</p>
+			<hr class="hrBlack">
+			<p>No issues detected.</p>
+		</div>
+		
+		<footer class="footerFixed">
+			<ul>
+				<li><a href="">Terms &amp; Conditions</a></li>
+				<li><a href="">Privacy Policy</a></li>
+			</ul>
+			<p class="footerText fontBold">&copy;2020 aCATdemy</p>
+		</footer>
+		
+		<a href="https://acatdemy.github.io/" class="MSbutton">
+			<p>Back to Main Site</p>
+		</a>
+		
+		<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.menu-toggler').click(function(){
+					$('.menu-toggler').toggleClass('active')
+					$('nav').toggleClass('active')
+				})
+			})
+		</script>
 	</body>
 </html>
