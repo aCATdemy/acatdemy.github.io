@@ -201,7 +201,7 @@ label #cancel{
 /* about-acatserver.html Styling */
 .about-page-container{
     min-height: 100vh;
-    display: block;
+    padding: 0 0 10px 0;
 }
 
 .about-page-header{
@@ -313,7 +313,8 @@ label #cancel{
 
 /* knowledge-base.html Styling */
 .knowledge-base-page-container{
-    min-height: 100vh; 
+    min-height: 100vh;
+    padding: 0 0 10px 0;
 }
 
 .knowledge-base-page-header{
@@ -343,7 +344,8 @@ label #cancel{
 
 /* support.html Styling */
 .support-page-container{
-    min-height: 100vh; 
+    min-height: 100vh;
+    padding: 0 0 10px 0;
 }
 
 .support-page-header{
