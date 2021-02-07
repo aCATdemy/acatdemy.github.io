@@ -16,4 +16,4 @@ var countdownfunction = setInterval(function() {
         clearInterval(countdownfunction);
         document.getElementById("time").innerHTML = "MAINTENANCE EXTENDED";
     }
-}, 500);
+}, 1000);
