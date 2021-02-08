@@ -3,7 +3,7 @@
 }
 
 body{
-    background: repeating-linear-gradient(45deg, #e6e6e6, #e6e6e6 10px, #dedede 10px, #dedede 20px);
+    background: repeating-linear-gradient(-45deg, #e6e6e6, #e6e6e6 10px, #dedede 10px, #dedede 20px);
     color: #000000;
 }
 
@@ -30,4 +30,13 @@ a:hover{
 hr{
     margin: auto;
     width: 25%;
+}
+
+.countdown-font-styling{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.disclaimer-font-styling{
+    font-style: italic;
 }
