@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: grid;
+    padding-top: 100px;
+}
+
+/* Customised Scroll */
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #080075;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #040040;
+}
+
+/* Navigation Bar */
+header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #1483D5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    transition: 0.25s;
+}
+
+header.sticky{
+    background: #080075;
+    padding: 5px 10%;
+}
+
+header .brand{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .menu a{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 30px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: color, background;
+}
+
+header .menu a:hover{
+    color: #000000;
+    background: #ffffff;
+}
+
+header .btn{
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1115px){
+    header .btn{
+        display: block;
+    }
+    header .menu{
+        position: fixed;
+        background: #080075;
+        flex-direction: column;
+        min-width: 400px;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        padding: 80px 50px;
+        transition: 0.25s;
+        transition-property: right;
+    }
+    header .menu.active{
+        right: 0;
+    }
+    header .menu .close-btn{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 25px;
+    }
+    header .menu a{
+        display: block;
+        font-size: 20px;
+        margin: 20px;
+        padding: 0 15px;
+    }
+}
+
+/* Page Background */
+.home-bg{
+    background: url('images/home-bg.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Content */
+.content{
+    position: relative;
+    width: fit-content;
+    min-height: 100vh;
+    display: flex;
+}
+
+/* home.html Styling */
+
+    /* TEST STYLES */
+    .leftcolumn {   
+        float: left;
+        width: 75%;
+      }
+      
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        background-color: #f1f1f1;
+        padding-left: 20px;
+      }
+      
+      /* Fake image */
+      .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+      }
+      
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {   
+          width: 100%;
+          padding: 0;
+        }
+      }
+      
+      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 400px) {
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+      }
+
+
+
+
+
+
+/* Footer */
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 50px 30px 50px;
+    color: #ffffff;
+    background-color: #2e2e2e;
+}
+
+.footer > *{
+    flex: 1 100%;
+}
+
+.footer-left{
+    padding-top: 10px;
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+
+.footer-link-title{
+    font-weight: bold;
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+.footer ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer li{
+    line-height: 2em;
+}
+
+.footer a{
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-right{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer-right > *{
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+
+.features-links{
+    padding: 10px 0 10px 0;
+}
+
+.box a{
+    color: #ffffff;
+}
+
+.box a:hover{
+    color: #e6e6e6;
+    font-weight: bold;
+}
+
+.footer-bottom{
+    text-align: center;
+    color: #ffffff;
+    padding-top: 50px;
+    font-size: 13px;
+}
+
+.footer-left p{
+    padding-right: 20%;
+    color: #ffffff;
+}
+
+.social-network a{
+    background: #364a62;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-network a i.discord{
+    color: #7289da;
+    padding: 7.5px 9.5px;
+    font-size: 25px;
+}
+
+@media screen and (min-width: 600px){
+    .footer-right > *{
+        flex: 1;
+    }
+    .footer-left{
+        flex: 1 0px;
+    }
+    .footer-right{
+        flex: 2 0px;
+    }
+}
+
+@media (max-width: 600px){
+    .footer{
+        padding: 15px;
+    }
+}
+
+/* Top Button */
+#topBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color: #080075;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+
+#topBtn:hover{
+    background-color: #555555;
+}
