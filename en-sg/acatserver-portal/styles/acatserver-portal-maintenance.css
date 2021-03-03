@@ -1,0 +1,51 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #fff url("../images/background.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.content-middle {
+    background-color: rgba(230, 230, 230, 0.70);
+    color: #000;
+    padding: 15px;
+    position: absolute;
+    width: fit-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #0000ff;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+hr {
+    margin: auto;
+    width: 30%;
+}
+
+.countdown-font-styling {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.copyright-font-styling {
+    text-align: left;
+    position: fixed;
+    bottom: 10px;
+    color: #fff;
+    padding: 0;
+}

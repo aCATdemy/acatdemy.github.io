@@ -3,132 +3,59 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
         <!-- Title and Favicon -->
-        <title>Knowledge Base | aCATServer Portal</title>
+        <title>Ongoing Maintenance | aCATServer Portal</title>
         <link rel="icon" type="image/png" href="images/acatdemy-logo.png">
 
         <!-- External CSS -->
-        <link rel="stylesheet" href="styles/acatserver-portal.css">
+        <link rel="stylesheet" href="styles/acatserver-portal-maintenance.css">
 
-        <!-- Meta Tags -->
+        <!-- SEO Meta Tags -->
+        <meta name="robot" content="noindex, noarchive, nosnippet, noimageindex">
         <meta name="author" content="aCATdemy">
-        <meta name="description" content="The Knowledge Base of the aCATServer Network.">
-        <meta name="keywords" content="aCATdemy, aCATServer, aCATServer Network, aCATServer Minecraft, aCATServer MC, aCATServer Portal, Knowledge Base, KB">
+        <meta name="description" content="aCATServer Portal is currently down for scheduled maintenance.">
+        <meta name="keywords" content="aCATServer, aCATServer Network, aCATServer Network Portal">
 
-        <!-- FontAwesome Kit -->
-        <script src="https://kit.fontawesome.com/b47353ca11.js" crossorigin="anonymous"></script>
+        <!-- Miscellaneous Meta Tag -->
+        <meta http-equiv="refresh" content="60">
 
         <!-- Facebook Open Graph -->
-        <meta property="og:url" content="https://acatdemy.github.io/en-sg/acatserver-portal/knowledge-base.html">
-        <meta property="og:title" content="Knowledge Base - aCATServer Portal">
-        <meta property="og:description" content="The Knowledge Base of the aCATServer Network.">
+        <meta property="og:url" content="https://acatdemy.github.io/en-sg/acatserver-portal/maintenance.html">
+        <meta property="og:title" content="Ongoing Maintenance - aCATServer Portal">
+        <meta property="og:description" content="aCATServer Portal is currently down for scheduled maintenance.">
         <meta property="og:image" content="https://acatdemy.github.io/en-sg/acatserver-portal/images/acatdemy-logo.png">
         <meta property="og:type" content="website">
 
         <!-- Twitter Card -->
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Knowledge Base - aCATServer Portal">
-        <meta name="twitter:description" content="The Knowledge Base of the aCATServer Network.">
+        <meta name="twitter:title" content="Ongoing Maintenance - aCATServer Portal">
+        <meta name="twitter:description" content="aCATServer Portal is currently down for scheduled maintenance.">
         <meta name="twitter:image" content="https://acatdemy.github.io/en-sg/acatserver-portal/images/acatdemy-logo.png">
     </head>
     <body>
-        <!-- Header -->
-        <header>
-            <nav class="navbar">
-                <div class="content">
-                    <div class="logo">
-                        <a href="#"><img src="images/acatserver-portal-logo-light.png" alt="acatserver-portal-logo-light.png"></a>
-                    </div>
-                    <ul class="menu-list">
-                        <div class="icon close-btn">
-                            <i class="fas fa-times"></i>
-                        </div>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="guidelines.html">Server Guidelines</a></li>
-                        <li><a href="knowledge-base.html" class="nav-active">Knowledge Base</a></li>
-                        <li><a href="support.html">Support</a></li>
-                    </ul>
-                    <div class="icon menu-btn">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <!-- Main Content -->
-        <div class="knowledge-base-banner"></div>
-        <div class="knowledge-base-wrapper">
-            <div class="content">
-                <div class="title">Knowledge Base</div>
-                <p>aCATServer Network Knowledge Base (KB) is a repository of issues discovered either by the server staff of members of the server. It keeps a record of every issue that arises as the server runs. Each record bears a unique ID and description of the issue. When a workaround/solution is available, the respective record will be updated to reflect it accordingly.</p>
-                <p>Please click on each record to expand it.</p>
-                <br>
-                <div class="accordion">
-                    <div class="accordion-wrapper">
-                        <div class="accordion-label">[SOLVED] KB1: Flying is not enabled on this server</div>
-                        <div class="accordion-content">
-                            <b>Issue:</b>
-                            <p>Members sometimes get disconnected/kicked from the server with the message, "Flying is not enabled on this server". This is due to the configuration of the server properties.</p>
-                            <br>
-                            <b>Solution (step by step):</b>
-                            <p>1.   Ensure that you have a stable internet connection. We recommend using an ethernet cable over a wireless connection.</p>
-                            <p>2.   Ensure that you are not using any mods, cheats, or unauthorised clients.</p>
-                            <p>3.   Run <a href="ms-settings:windowsupdate">Windows Update <i class="fas fa-external-link-alt"></i></a> to apply the latest patch and fixes.</p>
-                            <p>4.   If you use a third-party antivirus/firewall, either disable it or update its definition. aCATServer Network recommends Microsoft Defender and Windows in-built firewall.</p>
-                            <p>5.   Perform a disk cleanup.</p>
-                            <p>6.   If the issue persists after all these steps, perform a <a href="https://minecraft.gamepedia.com/Tutorials/Minecraft_help_FAQ#Reinstalling_Minecraft" target="_blank">clean install <i class="fas fa-external-link-alt"></i></a> of Minecraft.</p>
-                            <hr>
-                            <small>Last updated: 24 February 2021</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="content-middle">
+            <h2>ONGOING MAINTENANCE</h2>
+            <img src="images/gear-and-wrench.png" alt="gear-and-wrench.png" width="100px" height="100px">
+            <p>During this period, all webpages of aCATServer Portal will be inaccessible to members of the public.</p>
+            <b>For urgent matters, please contact aCATdemy via the "#urgent-matters" text channel in our <a href="https://discord.gg/g4aTv6t" target="_blank">Discord server</a>.</b>
+            <p>We seek your patience and understanding as we work hard to better secure and improve your browsing experience.</p>
+            <hr>
+            <p>Estimated time left:</p>
+            <p class="countdown-font-styling" id="time"></p>
+        </div>
+        <div class="copyright-font-styling">
+            <small>&copy; 2021 aCATdemy</small>
+            <br>
+            <small>This page design was last updated on 4 March 2021.</small>
         </div>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-container">
-                <div class="footer-row">
-                    <div class="footer-col">
-                        <h4>Language</h4>
-                        <ul>
-                            <li><a href="#"><i class="fas fa-globe-asia"></i> English (Singapore)</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Legal</h4>
-                        <ul>
-                            <li><a href="terms-of-use.html">Terms of Use</a></li>
-                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf3qvaKAyjmwSuTJIWAF8tffbmYG60U-jkA_dTKWmqKfI-RvA/viewform?usp=sf_link" target="_blank">Report Vulnerability <i class="fas fa-external-link-alt"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Quick Links</h4>
-                        <ul>
-                            <li><a href="home.html">Home</a></li>
-                            <li><a href="guidelines.html">Server Guidelines</a></li>
-                            <li><a href="knowledge-base.html">Knowledge Base</a></li>
-                            <li><a href="support.html">Support</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Connect with Us</h4>
-                        <div class="social-links">
-                            <a href="https://discord.gg/g4aTv6t" target="_blank"><i class="fab fa-discord"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <p>&copy; 2021 aCATdemy</p>
-                <p>This page was last updated on: 27 February 2021</p>
-            </div>
-        </footer>
-
         <!-- External JS -->
-        <script src="scripts/navbar.js"></script>
-        <script src="scripts/accordion.js"></script>
+        <script src="scripts/countdown.js"></script>
+
+        <!--
+            CREDITS:
+            1. gear-and-wrench.png: https://www.onlinewebfonts.com/icon/454307
+        -->
     </body>
 </html>
