@@ -1,6 +1,6 @@
 // Last updated: 4 March 2021
 
-var countDownDate = new Date("Mar 7, 2021 00:00:00").getTime();
+var countDownDate = new Date("Mar 5, 2021 00:00:00").getTime();
 
 var countdownfunction = setInterval(function() {
     var now = new Date().getTime();
