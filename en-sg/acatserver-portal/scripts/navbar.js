@@ -1,20 +1,18 @@
-const body = document.querySelector("body");
-const navbar = document.querySelector(".navbar");
-const menu = document.querySelector(".menu-list");
-const menuBtn = document.querySelector(".menu-btn");
-const closeBtn = document.querySelector(".close-btn");
+window.onscroll = function() {myFunction()};
 
-menuBtn.onclick = ()=>{
-    menu.classList.add("active");
-    menuBtn.classList.add("hide");
-    body.classList.add("disabledScroll");
-}
-closeBtn.onclick = ()=>{
-    menu.classList.remove("active");
-    menuBtn.classList.remove("hide");
-    body.classList.remove("disabledScroll");
-}
+var navbar = document.getElementById("navbar");
+var navbarcol = document.getElementById("navbarcol");
 
-window.onscroll = ()=>{
-    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+        navbarcol.classList.remove("bg-light");
+        navbarcol.classList.add("bg-warning");
+    } else {
+        navbar.classList.remove("sticky");
+        navbarcol.classList.remove("bg-warning");
+        navbarcol.classList.add("bg-light");
+    }
 }

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
         <!-- Title and Favicon -->
         <title>Knowledge Base | aCATServer Portal</title>
         <link rel="icon" type="image/png" href="images/acatdemy-logo.png">
@@ -11,124 +11,172 @@
         <!-- External CSS -->
         <link rel="stylesheet" href="styles/acatserver-portal.css">
 
-        <!-- SEO Meta Tags -->
-        <meta name="author" content="aCATdemy">
-        <meta name="description" content="The Knowledge Base of the aCATServer Network.">
-        <meta name="keywords" content="aCATdemy, aCATServer, aCATServer Network, aCATServer Minecraft, aCATServer MC, aCATServer Portal, Knowledge Base, KB">
+        <!-- Bootstrap v5.0.0-beta3 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
         <!-- FontAwesome Kit -->
         <script src="https://kit.fontawesome.com/b47353ca11.js" crossorigin="anonymous"></script>
 
+        <!-- SEO Meta Tags -->
+        <meta name="author" content="aCATdemy">
+        <meta name="description" content="The aCATServer Network Knowledge Base (KB) is a repository of issues discovered as the server runs.">
+        <meta name="keywords" content="aCATServer, aCATServer Network, aCATServer Portal, Knowledge Base, KB">
+
         <!-- Facebook Open Graph -->
         <meta property="og:url" content="https://acatdemy.github.io/en-sg/acatserver-portal/knowledge-base.html">
-        <meta property="og:title" content="Knowledge Base - aCATServer Portal">
-        <meta property="og:description" content="The Knowledge Base of the aCATServer Network.">
+        <meta property="og:title" content="Knowledge Base | aCATServer Portal">
+        <meta property="og:description" content="The aCATServer Network Knowledge Base (KB) is a repository of issues discovered as the server runs.">
         <meta property="og:image" content="https://acatdemy.github.io/en-sg/acatserver-portal/images/acatdemy-logo.png">
         <meta property="og:type" content="website">
 
         <!-- Twitter Card -->
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Knowledge Base - aCATServer Portal">
-        <meta name="twitter:description" content="The Knowledge Base of the aCATServer Network.">
+        <meta name="twitter:title" content="Knowledge Base | aCATServer Portal">
+        <meta name="twitter:description" content="The aCATServer Network Knowledge Base (KB) is a repository of issues discovered as the server runs.">
         <meta name="twitter:image" content="https://acatdemy.github.io/en-sg/acatserver-portal/images/acatdemy-logo.png">
     </head>
     <body>
-        <!-- Header -->
-        <header>
-            <nav class="navbar">
-                <div class="content">
-                    <div class="logo">
-                        <a href="#"><img src="images/acatserver-portal-logo-light.png" alt="acatserver-portal-logo-light.png"></a>
-                    </div>
-                    <ul class="menu-list">
-                        <div class="icon close-btn">
-                            <i class="fas fa-times"></i>
-                        </div>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="guidelines.html">Server Guidelines</a></li>
-                        <li><a href="knowledge-base.html" class="nav-active">Knowledge Base</a></li>
-                        <li><a href="support.html">Support</a></li>
-                    </ul>
-                    <div class="icon menu-btn">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <!-- Main Content -->
-        <div class="knowledge-base-banner"></div>
-        <div class="knowledge-base-wrapper">
-            <div class="content">
-                <div class="title">Knowledge Base</div>
-                <p>aCATServer Network Knowledge Base (KB) is a repository of issues discovered either by the server staff of members of the server. It keeps a record of every issue that arises as the server runs. Each record bears a unique ID and description of the issue. When a workaround/solution is available, the respective record will be updated to reflect it accordingly.</p>
-                <p>Please click on each record to expand it.</p>
-                <br>
-                <div class="accordion">
-                    <div class="accordion-wrapper">
-                        <div class="accordion-label">[SOLVED] KB1: Flying is not enabled on this server</div>
-                        <div class="accordion-content">
-                            <b>Issue:</b>
-                            <p>Members sometimes get disconnected/kicked from the server with the message, "Flying is not enabled on this server". This is due to the configuration of the server properties.</p>
-                            <br>
-                            <b>Solution (step by step):</b>
-                            <p>1.   Ensure that you have a stable internet connection. We recommend using an ethernet cable over a wireless connection.</p>
-                            <p>2.   Ensure that you are not using any mods, cheats, or unauthorised clients.</p>
-                            <p>3.   Run <a href="ms-settings:windowsupdate">Windows Update <i class="fas fa-external-link-alt"></i></a> to apply the latest patch and fixes.</p>
-                            <p>4.   If you use a third-party antivirus/firewall, either disable it or update its definition. aCATServer Network recommends Microsoft Defender and Windows in-built firewall.</p>
-                            <p>5.   Perform a disk cleanup.</p>
-                            <p>6.   If the issue persists after all these steps, perform a <a href="https://minecraft.gamepedia.com/Tutorials/Minecraft_help_FAQ#Reinstalling_Minecraft" target="_blank">clean install <i class="fas fa-external-link-alt"></i></a> of Minecraft.</p>
-                            <hr>
-                            <small>Last updated: 24 February 2021</small>
-                        </div>
+        <!-- Header START -->
+        <div class="topnav-wrapper">
+            <div class="topnav">
+                <div class="topnav-dropdown">
+                    <button class="topnav-dropbtn">You are in aCATServer Portal <i class="fas fa-caret-down"></i></button>
+                    <div class="topnav-dropdown-content">
+                        <a href="https://acatdemy.github.io/">Main Site</a>
+                        <a class="fw-bold" href="https://acatdemy.github.io/en-sg/acatserver-portal/home.html">aCATServer Portal</a>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="navbar" style="z-index: 999;">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbarcol">
+                <div class="container">
+                    <a class="navbar-brand" href="home.html"><img src="images/acatserver-portal-logo-dark.png" alt="acatserver-portal-logo-dark.png"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle Navigation Bar">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarToggler">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item pe-4">
+                                <a class="nav-link" href="home.html">Home</a>
+                            </li>
+                            <li class="nav-item pe-4">
+                                <a class="nav-link" href="server-guidelines.html">Server Guidelines</a>
+                            </li>
+                            <li class="nav-item pe-4">
+                                <a class="nav-link active fw-bold" aria-current="page" href="knowledge-base.html">Knowledge Base</a>
+                            </li>
+                            <li class="nav-item pe-4">
+                                <a class="nav-link" href="support.html">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Header END -->
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-container">
-                <div class="footer-row">
-                    <div class="footer-col">
-                        <h4>Language</h4>
-                        <ul>
-                            <li><a href="#"><i class="fas fa-globe-asia"></i> English (Singapore)</a></li>
-                        </ul>
+        <!-- Body START -->
+        <div class="container-lg" style="min-height: 100vh; margin-top: 20px; margin-bottom: 20px;">
+            <p class="pt-3">aCATServer Network Knowledge Base (KB) is a repository of issues discovered as the server runs. Each record bears a unique ID and description of the issue. When a solution or workaround is available, the respective record will be updated to reflect it accordingly.</p>
+            <hr>
+            <p>No issues detected.</p>
+            <!--
+            <div class="my-3 p-3 bg-body rounded shadow-sm">
+                <h6 class="border-bottom pb-2 mb-0">Current Issues</h6>
+                <div class="d-flex text-muted pt-3">
+                    <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+                    <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+                        <div class="d-flex justify-content-between">
+                            <strong class="text-gray-dark">Full Name</strong>
+                            <a href="#">Follow</a>
+                        </div>
+                        <span class="d-block">@username</span>
                     </div>
-                    <div class="footer-col">
-                        <h4>Legal</h4>
-                        <ul>
-                            <li><a href="terms-of-use.html">Terms of Use</a></li>
-                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf3qvaKAyjmwSuTJIWAF8tffbmYG60U-jkA_dTKWmqKfI-RvA/viewform?usp=sf_link" target="_blank">Report Vulnerability <i class="fas fa-external-link-alt"></i></a></li>
-                        </ul>
+                </div>
+            </div>
+            <div class="my-3 p-3 bg-body rounded shadow-sm">
+                <h6 class="border-bottom pb-2 mb-0">Resolved Issues</h6>
+                <div class="d-flex text-muted pt-3">
+                    <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+                    <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+                        <div class="d-flex justify-content-between">
+                            <strong class="text-gray-dark">Full Name</strong>
+                            <a href="#">Follow</a>
+                        </div>
+                        <span class="d-block">@username</span>
                     </div>
-                    <div class="footer-col">
-                        <h4>Quick Links</h4>
-                        <ul>
-                            <li><a href="home.html">Home</a></li>
-                            <li><a href="guidelines.html">Server Guidelines</a></li>
-                            <li><a href="knowledge-base.html">Knowledge Base</a></li>
-                            <li><a href="support.html">Support</a></li>
-                        </ul>
+                </div>
+            </div>
+            -->
+        </div>
+        <!-- Body END -->
+
+        <!-- Footer START -->
+        <footer class="text-white pt-5 pb-4" style="background-color: #2e2e2e;">
+            <div class="container text-md-start">
+                <div class="row text-md-start">
+                    <div class="col-lg-3 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 fw-bold text-warning">About Us</h5>
+                        <p>aCATServer Network is a private SMP Minecraft server hosted by aCATdemy for his friends. Unfortunately, members of the public who are not invited to play on the aCATServer Network will be barred from entering the server. Thank you for your understanding.</p>
                     </div>
-                    <div class="footer-col">
-                        <h4>Connect with Us</h4>
-                        <div class="social-links">
-                            <a href="https://discord.gg/JuZFxPAQS5" target="_blank"><i class="fab fa-discord"></i></a>
+                    <div class="col-lg-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 fw-bold text-warning">Navigation Links</h5>
+                        <p>
+                            <a href="https://acatdemy.github.io/" class="text-white" style="text-decoration: none;">Main Site</a>
+                        </p>
+                        <p>
+                            <a href="home.html" class="text-white" style="text-decoration: none;">Home</a>
+                        </p>
+                        <p>
+                            <a href="server-guidelines.html" class="text-white" style="text-decoration: none;">Server Guidelines</a>
+                        </p>
+                        <p>
+                            <a href="knowledge-base.html" class="text-white" style="text-decoration: none;">Knowledge Base</a>
+                        </p>
+                        <p>
+                            <a href="support.html" class="text-white" style="text-decoration: none;">Support</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 fw-bold text-warning">Legal</h5>
+                        <p>
+                            <a href="terms-of-use.html" class="text-white" style="text-decoration: none;">Terms of Use</a>
+                        </p>
+                        <p>
+                            <a href="privacy-policy.html" class="text-white" style="text-decoration: none;">Privacy Policy</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-3 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 fw-bold text-warning">Page Language</h5>
+                        <p>
+                            <i class="fas fa-globe-asia"></i> English (United Kingdom)
+                        </p>
+                    </div>
+                </div>
+                <hr class="mb-4">
+                <div class="row align-items-center">
+                    <div class="col-md-7">
+                        <p>&copy; 2021 aCATdemy. All rights reserved.</p>
+                        <p class="pb-3">Last updated on 29 March 2021.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="text-center text-md-right">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a href="https://discord.com/invite/JuZFxPAQS5" target="_blank" class="btn-floating btn-sm text-white" style="font-size: 25px;"><i class="fab fa-discord"></i></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-copyright">
-                <p>&copy; 2021 aCATdemy</p>
-                <p>This page was last updated on: 5 March 2021</p>
-            </div>
         </footer>
+        <!-- Footer END -->
 
-        <!-- External JS -->
+        <!-- JavaScript START -->
         <script src="scripts/navbar.js"></script>
-        <script src="scripts/accordion.js"></script>
+        <!-- JavaScript END -->
     </body>
 </html>
