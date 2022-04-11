@@ -1,0 +1,301 @@
+/*
+    *@Author: aCATdemy*
+    *@Title: aCATdemy's Website CSS*
+    *@Description: *
+    *@Published: *
+    *@Updated: *
+*/
+
+
+/* || General Styles START */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 12.5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #616161;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+}
+
+a {
+    text-decoration: none !important;
+}
+/* || General Styles END */
+
+
+/* || Important Notice START */
+
+/* || Important Notice END */
+
+
+/* || Header START */
+.private-smp-header {
+    background-color: #0dcaf0;
+    color: #fff;
+}
+
+header .btn {
+    border-radius: 0;
+    border: none;
+}
+
+header .btn:focus {
+    outline: none;
+    box-shadow: none;
+    background-color: #6edff6;
+}
+
+header .dropdown-menu {
+    width: 125%;
+    transform: translate3d(0px, 35.95px, 0px) !important;
+    background-color: #6edff6;
+    border-radius: 0;
+    border: none;
+    padding: 0;
+    height: auto;
+    max-height: 500px;
+    overflow-x: hidden;
+    z-index: 1021;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+header .dropdown-menu li a {
+    padding: 10px 40px;
+}
+
+header li p {
+    font-size: 14px;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+header .dropdown-menu li a.active {
+    padding: 10px 35px;
+    border: 5px;
+    border-left-style: solid;
+    border-left-color: #f33;
+    background-color: #0dcaf0;
+}
+
+header .dropdown-menu li a:hover {
+    cursor: pointer;
+    background-color: #0bbadd;
+    color: #fff;
+}
+
+header .dropdown-menu::-webkit-scrollbar-track {
+    background-color: #31d2f2;
+}
+
+header a {
+    color: #000;
+}
+
+header a:hover {
+    color: #000;
+}
+
+@media screen and (max-width: 991.5px) {
+    header {
+        display: none;
+    }
+}
+
+header .container-md .btn-group ul li .active {
+    background-color: #0bbadd;
+}
+
+header .container-md .btn-group #headerSupportLink a {
+    color: #000;
+}
+/* || Header END */
+
+
+/* || Navbar START */
+nav #logo-text {
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+nav .navbar-toggler {
+    border: none;
+    transition: 0.3s;
+}
+
+nav .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+nav a {
+    color: #000;
+}
+
+nav a.active {
+    border: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #0dcaf0;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav img {
+    width: 65px;
+    height: 65px;
+    transition: 0.3s;
+}
+
+nav .btn:focus {
+    outline: none;
+    box-shadow: none;
+    background-color: #6edff6;
+}
+
+nav .hideOnMobile {
+    display: block;
+}
+
+nav .mobile-header {
+    display: none;
+}
+
+nav .mobile-header .dropdown-menu {
+    transition: 0.3s;
+    border: none;
+    background-color: #cff4fc;
+}
+
+nav .mobile-header .dropdown-menu.show {
+    padding: 0;
+}
+
+nav .mobile-header .dropdown-menu p {
+    font-size: 14px;
+    margin: 0;
+    padding: 8px 20px;
+}
+
+nav .mobile-header .dropdown-menu a {
+    padding: 8px 40px;
+}
+
+nav .mobile-header .dropdown-menu li a:hover {
+    background-color: #9eeaf9;
+}
+
+nav .mobile-header .dropdown-menu li:last-child a:hover {
+    background-color: #9eeaf9;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+nav .mobile-header .dropdown-menu a.active {
+    font-weight: bold;
+    color: #000;
+    background-color: inherit;
+}
+
+@media screen and (max-width: 991.5px) {
+    nav #logo-text {
+        font-size: 20px !important;
+    }
+
+    nav img {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    nav a.active {
+        font-weight: bold;
+        border: 0;
+        border-bottom-style: none;
+    }
+
+    nav .hideOnMobile {
+        display: none;
+    }
+
+    nav .mobile-header {
+        display: block;
+    }
+}
+/* || Navbar END */
+
+
+/* || Header Alert START */
+.modal .btn-close:focus {
+    outline: none;
+    box-shadow: none;
+}
+/* || Header Alert END */
+
+
+/* || Home Page Styling START */
+/* || Home Page Styling END */
+
+
+/* || Footer START */
+footer {
+    background-color: #484848;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    cursor: pointer;
+    color: #adb5bd;
+}
+
+footer a.discord:hover {
+    cursor: pointer;
+    color: #5865f2;
+}
+
+footer a.github:hover {
+    cursor: pointer;
+    color: #171515;
+}
+
+footer .footer-legal ul {
+    list-style: none;
+}
+
+footer .footer-legal ul li {
+    border-right: 2px solid #ababab;
+    display: inline-block;
+}
+
+footer .footer-legal ul li:last-child {
+    border-right: none;
+}
+
+@media screen and (max-width: 767.5px) {
+    footer .links {
+        margin-left: 17.5px;
+    }
+}
+/* || Footer END */
